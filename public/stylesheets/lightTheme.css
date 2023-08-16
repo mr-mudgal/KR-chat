@@ -595,6 +595,7 @@ div#user_chat ul li {
 }
 
 div#user_chat ul li#from {
+    text-align: left;
     border-bottom-right-radius: 0;
     margin-right: 4px;
     background: #0000FF88;
