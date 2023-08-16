@@ -1,0 +1,23 @@
+extends layout
+
+block content
+
+    div#chat-grp
+        button#chat_btn(onclick='showOption("chat_card", "grp_card", "chat_btn", "grp_btn")') Chats
+        button#grp_btn(onclick='showOption("grp_card", "chat_card", "grp_btn", "chat_btn")') Groups
+        div#chat_card
+            div#show_users
+                for user in resource.users
+                    button.show_user(onclick=`showCHH('${user.username}')`) #{user.username}
+
+        div#grp_card
+            div#show_grps
+                for group in resource.groups
+                    button.show_user(onclick=`showGRP('${group.grp_name}')`) #{group.grp_name}
+            //u GROUPS
+            //p#grp_msg_from
+            //br
+            //textarea.msg#grp_msg(name='msg' placeholder='write your msg here')
+            //button.send_msg#grp_send_msg(onclick='showMsg("chat_send_msg", "grp_msg", "grp_msg_from")') Send >
+
+

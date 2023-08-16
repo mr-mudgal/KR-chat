@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  div#error
+    h1= resource.message
+    h2= resource.error
+    input(type="button" value="Go Back" onclick="window.history.back()")

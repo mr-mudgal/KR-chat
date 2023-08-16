@@ -1,0 +1,21 @@
+extends layout
+block content
+    div#user_chat_holder
+        button#goback(onclick='go_back()') <
+        p#chat_title #{resource.grpName}
+        br
+        p#block EXIT
+        div#user_chat
+            div#chats-grp
+                ul#grpmsgs
+                    for msg in resource.data
+                        if msg.from === resource.sender
+                            li#from #{msg.message}
+                            p#from #{msg.hour}:#{msg.minutes}
+                        else
+                            li#to #{msg.from} <hr> #{msg.message}
+                            p#to #{msg.hour}:#{msg.minutes}
+
+            div#send-msg
+                textarea.msg#chat_msg(name='msg' placeholder='write your msg here')
+                button.send_msg#chat_send_msg(onclick=`send_grp_msg("${resource.sender}", "${resource.grpName}", "${resource.data[0].members}")`) >

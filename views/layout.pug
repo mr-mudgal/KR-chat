@@ -1,0 +1,683 @@
+doctype html
+html(lang='en')
+  head
+    title #{resource.title}
+    link#style_theme(rel='stylesheet' href='/stylesheets/lightTheme.css')
+    script(src='/javascripts/socket.io.js')
+    script(src='/javascripts/main.js')
+
+  header
+    nav
+      img#logo(src='https://cdn.glitch.global/1f0e2770-7a69-464d-befa-46a46ccb14c9/KR_noBG.gif?v=1692081945281')
+      h1
+        pre KR Chat |  #{resource.title}
+        img#profile_home(onclick='show_settings()' src='https://th.bing.com/th/id/OIP.49CH_m8xcY3b6stGkMkG2AHaEO?pid=ImgDet&rs=1')
+        ul#settings
+          if resource.logged === 'True'
+            li
+              button
+                a(href='/user/profile') Profile
+          li
+            a(href='/settings')
+              button Settings
+          hr
+          li
+            if resource.logged === 'True'
+              button
+                a(href='/user/signout') Signout
+
+            else
+              button
+                a(href='/signin') Signin
+
+
+
+  if typeof resource.sender !== 'undefined'
+    body(onload=`connectsocket('${resource.sender}')`)
+  else
+    body
+  div#body
+      block content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+        | here is the content
+        | here is the content
+        br
+        | here is the content
+        | here is the content
+
+
+
+
+
+  footer
+    div
+      ul
+        li
+          a(href='/')
+            button Home
+        if resource.logged === 'True'
+          li
+            a(href='/user/chat')
+              button Chat
+          li
+            a#profile(href='/user/profile')
+              button
+                //img(src='https://img.freepik.com/premium-vector/3d-realistic-person-people-vector-illustration_156780-130.jpg?w=826' width='50' height='50')
+                |Profile
+          li
+            a(href='/user/search')
+              button Search

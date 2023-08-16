@@ -1,0 +1,36 @@
+extends layout
+
+
+block content
+    div#profile-details
+        table.profile_main
+            tr
+                td.title Profile Image :
+                td
+                    img#profile_det(src='https://th.bing.com/th/id/OIP.49CH_m8xcY3b6stGkMkG2AHaEO?pid=ImgDet&rs=1')
+                    figcaption
+                        a(class='edit_prf' href='/edit-profile-image') edit
+            tr
+                td.title Username :
+                td @#{resource.data.username}
+                    br
+                    a(class='edit_prf' href='edit-profile-username') edit
+            tr
+                td.title Name :
+                td #{resource.data.full_name}
+                    br
+                    a(class='edit_prf' href='edit-profile-name') edit
+
+        table
+            tr
+                td.title Email :
+                td
+                    a(class='prf_links' href='mailto:mr.mudgal.1.0@gmail.com') #{resource.data.email}
+                    br
+                    a(class='edit_prf' href='edit-profile-email') edit
+            tr
+                td.title Phone :
+                td
+                    a(class='prf_links' href='tel:8630473979') #{resource.data.phone}
+                    br
+                    a(class='edit_prf' href='edit-profile-email') edit

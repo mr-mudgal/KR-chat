@@ -1,0 +1,23 @@
+extends layout
+block content
+    div#user_chat_holder
+        button#goback(onclick='go_back()') <
+        p#chat_title #{resource.username}
+        p#chat_title1 #{resource.name}
+        p#block BLOCK
+        div#user_chat
+            div#chats
+                ul#msgs
+                    for msg in resource.data
+                        if msg.to === resource.username
+                            li#from
+                              pre #{msg.message}
+                            p#from #{msg.hour}:#{msg.minute}
+                        else
+                            li#to
+                              pre #{msg.message}
+                            p#to #{msg.hour}:#{msg.minute}
+
+            div#send-msg
+                textarea.msg#chat_msg(name='msg' placeholder='write your msg here')
+                button.send_msg#chat_send_msg(onclick=`send("${resource.sender}", "${resource.username}")`) >

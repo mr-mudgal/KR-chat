@@ -1,0 +1,22 @@
+extends layout
+
+block content
+
+    div#search
+        button#chat_btn(onclick='showOption("all_users", "all_grps", "chat_btn", "grp_btn")') Chats
+        button#grp_btn(onclick='showOption("all_grps", "all_users", "grp_btn", "chat_btn")') Group
+        div#all_users
+            for user in resource.users
+                if resource.blocked.includes(user)
+                else
+                    div#user-content
+                        button.show_user(onclick=`showCHH('${user.username}')`) #{user.username}
+                        if resource.connected.includes(user.username)
+                            button#follow(onclick=`connectDis('${user.username}', 'disconnect')`) Connected
+                        else
+                            button#follow(onclick=`connectDis('${user.username}', 'connect')`) Connect Me
+
+        div#all_grps
+            p HELLO
+
+

@@ -1,0 +1,732 @@
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 100px;
+    box-shadow: inset 0 0 6px 2px green;
+}
+
+/*ERROR STYLING*/
+div#error {
+    background: #dddddd;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+    padding: 50px 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 50px 1px indianred;
+}
+
+div#error h1{
+    color: red;
+}
+
+/*NAVIGATION STYLINGS*/
+nav {
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+img#logo {
+    width: 8%;
+    height: 8%;
+    border-radius: unset;
+    margin-right: 100%;
+}
+
+nav h1 {
+    margin-top: -4%;
+    margin-right: 6%;
+}
+
+nav h1 img#profile_home {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    margin-right: -70px;
+    margin-top: -100px
+}
+
+nav h1 ul#settings {
+    list-style: none;
+    display: none;
+    text-align: left;
+    background: #dddddd;
+    width: fit-content;
+    position: absolute;
+    padding: 5px 10px 10px 10px;
+    border-radius: 8px;
+    margin-left: 90%;
+    margin-top: 0;
+}
+
+nav h1 ul#settings li {
+    margin: 10px;
+}
+
+nav h1 ul#settings li button {
+    border-radius: 7px;
+    border-width: 1px;
+    background: #eeeeee;
+    color: black;
+}
+
+nav h1 ul#settings li button:focus {
+    background: lightcoral;
+}
+
+nav h1 ul#settings li button:hover {
+    background: lightsalmon;
+}
+
+
+/*BODY and FOOTER STYLINGS*/
+body {
+    /*background: white;*/
+    /*color: black;*/
+    /*background: black;*/
+    /*color: black;*/
+    overflow: hidden;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+div#body {
+    overflow-y: auto;
+    text-align: center;
+    height: 688px;
+    margin-top: -135px;
+    margin-bottom: -92px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+div#body::-webkit-scrollbar {
+    width: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:focus {
+    color: orangered;
+}
+
+footer div {
+    text-align: center;
+    margin-top: 36px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 10px 0;
+    background: #0000FF88;
+    backdrop-filter: blur(2px);
+    border-radius: 12px;
+    border-width: 0;
+    display: inline-flex;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+footer li {
+    margin: 0 20px;
+}
+
+footer button {
+    border-radius: 7px;
+    border-width: 1px;
+    background: lightgrey;
+    color: black;
+}
+
+footer button:focus {
+    background: lightcoral;
+}
+
+footer button:hover {
+    background: lightsalmon;
+}
+
+
+/*PROFILE DETAIL STYLINGS*/
+div#profile-details {
+    margin-left: auto;
+    margin-top: 10%;
+    margin-right: auto;
+    background: #dddddd;
+    width: 37%;
+    border-radius: 50px;
+    padding: 25px 0;
+    margin-bottom: 67px;
+}
+
+table.profile_main{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    background: #eeeeee;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+table tr td.title {
+    text-align: left;
+    padding-right: 100px;
+}
+
+table tr td {
+    padding-top: 10px
+}
+
+img#profile_det {
+    border-radius: 100px;
+    height: 150px;
+    width: 150px;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+}
+
+a.prf_links {
+    text-decoration: none;
+}
+
+a.prf_links:focus {
+    color: unset;
+}
+
+a.edit_prf {
+    color: grey;
+}
+
+
+/*SIGNIN FORM*/
+div#signinForm {
+    background: #dddddd;
+    width: 30%;
+    border-radius: 45px;
+    padding: 24px 0;
+    text-align: center;
+    margin: 15% auto 60px;
+}
+
+button#signin, button#signup {
+        background: none;
+        padding: 15px;
+        color: black;
+        border-radius: 15px;
+        border: none;
+        margin-inline-start: 14%;
+        margin-inline-end: 14%;
+    }
+
+button#signup {
+        color: #666666;
+    }
+
+button#signin {
+        font-weight: bold;
+        background: #eeeeee;
+    }
+
+button#signin, button#signup {
+        cursor: pointer
+    }
+
+div#signinForm_inside {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    width: 70%;
+    background: #eeeeee;
+    margin-top: 25px;
+    padding-top: 15px;
+    padding-inline: 30px;
+    padding-block: 30px;
+}
+
+form#signinForm_det {
+    display: block;
+    font-weight: bold;
+}
+
+form#signinForm_det label.password {
+    margin-right: -75%;
+}
+
+form#signinForm_det label.phone {
+    margin-right: -85%;
+    margin-bottom: 0;
+}
+
+form#signinForm_det label.username {
+    margin-right: -33%;
+    margin-bottom: -10px;
+}
+
+form#signinForm_det input.username, input.password {
+    margin-top: 10px;
+    width: 250px;
+    border-radius: 8px;
+    border: 0;
+    font-size: 20px;
+    margin-bottom: 30px; /*This is for when phone/username available*/
+}
+
+/*form#signinForm_det input.phone {*/
+/*    width: 250px;*/
+/*    border-radius: 8px;*/
+/*    border: 0;*/
+/*    font-size: 20px;*/
+/*    margin-bottom: 0;*/
+/*}*/
+
+/*form#signinForm_det p#phoneDis {*/
+/*    font-weight: normal;*/
+/*    margin: 0 100% -6% 0;*/
+/*    padding: 0;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*form#signinForm_det .phone {*/
+/*    display: none;*/
+/*}*/
+
+/*form#signinForm_det p#UMdis {*/
+/*    margin: 0 56% -20% 0;*/
+/*    padding: 0;*/
+/*    cursor: pointer;*/
+/*    display: none;*/
+/*    font-weight: normal;*/
+/*}*/
+
+form#signinForm_det input:focus {
+    border: none;
+    outline: none;
+    color: dodgerblue;
+}
+
+form#signupForm_det {
+    display: none;
+    font-weight: bold;
+}
+
+form#signupForm_det label {
+    margin-right: -75%;
+}
+
+form#signupForm_det input {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 250px;
+    border-radius: 8px;
+    border: 0;
+    font-size: 20px;
+}
+
+form#signupForm_det label#repass {
+    margin-right: -50%;
+}
+
+form#signupForm_det label#email {
+    margin-right: -85%;
+}
+
+form#signupForm_det label#phone {
+    margin-right: -85%;
+}
+
+form#signupForm_det input:focus {
+    border: none;
+    outline: none;
+    color: dodgerblue;
+}
+
+form#signupForm_det p#result {
+    margin: 0;
+    padding: 0;
+    color: red;
+}
+
+button#signin_btn, button#signup_btn {
+    background: none;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background: #dddddd;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 8px;
+}
+
+button#signin_btn:hover, button#signup_btn:hover {
+    background: #cccccc;
+}
+
+
+
+/*CHATTING PAGE*/
+div#chat-grp {
+    width: 100%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #cccccc;
+    border-radius: 45px;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 70px;
+    height: 500px;
+}
+
+button#chat_btn, button#grp_btn {
+    cursor: pointer;
+    background: none;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    margin: -10px auto 10px;
+}
+
+button#grp_btn {
+    color: #666666;
+}
+
+button#chat_btn {
+    font-weight: bold;
+    background: #eeeeee;
+}
+
+div#chat_card {
+    background: #eeeeee;
+    margin-right: auto;
+    margin-left: auto;
+    width: 93%;
+    height: 445px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    overflow-y: scroll;
+}
+
+div#chat_card::-webkit-scrollbar {
+    width: 10px;
+}
+
+div#chat_card::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+div#chat_card::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 100px;
+    box-shadow: inset 0 0 6px 2px red;
+}
+
+div#chat_card::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 20px;
+}
+
+div#chat_card::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 20px;
+}
+
+div#grp_card {
+    background: #eeeeee;
+    margin-right: auto;
+    margin-left: auto;
+    display: none;
+    width: 93%;
+    height: 445px;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+div#chat-grp textarea.msg {
+    width: 40%;
+    height: 10%;
+    resize: none;
+    border-radius: 15px;
+    margin-bottom: -7px;
+    margin-top: 30%;
+    margin-left: 27%;
+    text-align: center;
+}
+
+div#chat-grp textarea.msg button.send_msg {
+    position: fixed;
+}
+
+div#chat-grp textarea.msg::placeholder {
+    text-align: center;
+    padding-top: 2%;
+}
+
+div#chat-grp button.send_msg {
+    border-radius: 8px;
+    margin-left: 20px;
+    border: 1px solid;
+    background: #cccccc;
+}
+
+div #chat-grp button.show_user {
+    border-radius:13px;
+    border-width: 1px;
+    background: #cccccc;
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+div#user_chat_holder {
+    width: 100%;
+    background: #cccccc;
+    border-radius: 38px;
+    text-align: center;
+    margin: 10% auto 58px;
+    height: 520px;
+}
+
+div#user_chat {
+    background: #eeeeee;
+    margin-right: auto;
+    margin-left: auto;
+    width: 98%;
+    height: 468px;
+    border-radius: 30px;
+    margin-top: -1%;
+}
+
+button#goback {
+    border-radius: 8px;
+    border-width: 1px;
+    background: #cccccc;
+    font-size: x-large;
+    margin-top: 5px;
+    margin-bottom: 18px;
+    cursor: pointer;
+    position: sticky;
+    margin-left: -93%;
+}
+
+p#chat_title {
+    font-weight: bold;
+    margin-top: -50px;
+}
+
+p#chat_title1 {
+    margin-top: -12px;
+    color: grey;
+}
+
+div#user_chat div#chats {
+    height: 426px;
+    overflow-y: scroll;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+div#chats::-webkit-scrollbar {
+    width: 4px;
+}
+
+div#chats::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+div#chats::-webkit-scrollbar-track-piece:start {
+    margin-top: 20px;
+}
+
+div#user_chat div#chats-grp {
+    height: 426px;
+    overflow-y: scroll;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+div#chats-grp::-webkit-scrollbar {
+    width: 4px;
+}
+
+div#chats-grp::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+div#chats-grp::-webkit-scrollbar-track-piece:start {
+    margin-top: 20px;
+}
+
+pre {
+  margin: 0;
+}
+
+div#user_chat ul {
+    list-style: none;
+}
+
+div#user_chat ul li {
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: fit-content;
+    padding: 3px 7px;
+    border: 1px black dotted;
+}
+
+div#user_chat ul li#from {
+    border-bottom-right-radius: 0;
+    margin-right: 4px;
+    background: #0000FF88;
+    color: white;
+    direction: rtl;
+    float: right;
+    margin-inline-end: 50%;
+    padding-bottom: 15px;
+}
+
+div#user_chat ul li#to {
+    text-align: left;
+    margin-left: -35px;
+    direction: ltr;
+    float: left;
+    margin-inline-end: 50%;
+    border-bottom-left-radius: 0;
+    padding-bottom: 15px;
+}
+
+div#user_chat ul p#from {
+    margin-right: 12px;
+    color: #cccccc;
+    direction: rtl;
+    float: right;
+    margin-top: -2%;
+    font-size: x-small;
+    margin-inline-end: 50%;
+    user-select: none;
+}
+
+div#user_chat ul p#to {
+    margin-left: -28px;
+    color: #aaaaaa;
+    direction: ltr;
+    float: left;
+    margin-top: -2%;
+    font-size: x-small;
+    margin-inline-end: 50%;
+    user-select: none;
+}
+
+div#send-msg {
+    border-top: 1px solid #aaaaaa;
+}
+
+div#send-msg textarea{
+    resize: none;
+    width: 90%;
+    border-radius: 12px;
+    margin-top: 3px;
+    text-align: center;
+}
+
+div#send-msg textarea:focus{
+    outline: none
+}
+
+div#send-msg button{
+    border-radius: 12px;
+    border: 1px black solid;
+    background: #0000FF88;
+    color: white;
+    margin-left: 1%;
+    padding: 10px 20px;
+    display: inline-flex;
+    position: relative;
+    top: -13px;
+}
+
+p#block {
+    margin-top: -30px;
+    margin-bottom: 14px;
+    color: grey;
+    margin-left: 90%;
+}
+
+
+/*SEARCH PAGE*/
+div#search {
+    width: 100%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #cccccc;
+    border-radius: 45px;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 70px;
+    height: 500px;
+}
+
+div#all_users {
+    background: #eeeeee;
+    margin-right: auto;
+    margin-left: auto;
+    width: 93%;
+    height: 445px;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+div#all_grps {
+    background: #eeeeee;
+    margin-right: auto;
+    margin-left: auto;
+    width: 93%;
+    height: 445px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: none;
+}
+
+div#search button.show_user {
+    border-radius:13px;
+    border-width: 1px;
+    background: #cccccc;
+    height: 40px;
+    width: 89.5%;
+    margin-top: 20px;
+    font-size: x-large;
+    cursor: pointer;
+    float: left;
+}
+
+div#search button#follow {
+    background: #cccccc;
+    border-width: 1px;
+    border-radius: 13px;
+    height: 40px;
+    width: 9.5%;
+    margin-top: 20px;
+    cursor: crosshair;
+    float: right;
+}

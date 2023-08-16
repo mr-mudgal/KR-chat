@@ -1,0 +1,53 @@
+extends layout
+
+block content
+    div#signinForm
+        button#signin(onclick='showOption("signinForm_det", "signupForm_det", "signin", "signup")') Sign In
+        button#signup(onclick='showOption("signupForm_det", "signinForm_det", "signup", "signin")') Sign Up
+
+        div#signinForm_inside
+            form#signinForm_det(method='POST' action='/signin')
+                //p#phoneDis(onclick='showSigninPhone("phone", "username", "UMdis", "phoneDis")') Phone
+                //p#UMdis(onclick='showSigninPhone("username", "phone", "phoneDis", "UMdis")') Username/E-Mail
+
+                label.username Username / E-Mail / Phone
+                br
+                input.username(name='username' type='text' required oninput="setCustomValidity('')" oninvalid='this.setCustomValidity("Enter username/e-mail!")')
+                br
+                //label.phone Phone
+                //br
+                //input.phone(name='phone' type='number' required oninput="setCustomValidity('')" oninvalid='this.setCustomValidity("Enter phone!")')
+                //br
+                label.password Password
+                br
+                input.password(name='password' type='password' required oninput="setCustomValidity('')" oninvalid='this.setCustomValidity("Enter password")')
+                br
+                button#signin_btn(onclick='submit_btn("signin_btn")') Sign In
+
+            form#signupForm_det(method='POST' action='/signup')
+                label Full Name
+                br
+                input(name='full_name' type='text' required oninput="setCustomValidity('')" oninvalid='this.setCustomValidity("Enter full name!")')
+                br
+                label Username
+                br
+                input(name='username' type='text' required oninput="setCustomValidity('')" oninvalid='this.setCustomValidity("Enter username!")')
+                br
+                label#email Email
+                br
+                input(name='user_email' type='text' required oninput="setCustomValidity('')" oninvalid='this.setCustomValidity("Enter username!")')
+                br
+                label#phone Phone
+                br
+                input(name='phone' type='text' required oninput="setCustomValidity('')" oninvalid='this.setCustomValidity("Enter username!")')
+                br
+                label Password
+                br
+                input#pass(name='password' type='password' required onKeyUp='checkrepass()' oninput="setCustomValidity('')" oninvalid='this.setCustomValidity("Enter password")')
+                br
+                label#repass Re-Enter Password
+                br
+                input#reps(name='repassword' type='password' required onKeyUp='checkrepass()' oninput="setCustomValidity('')" oninvalid='this.setCustomValidity("Enter password")')
+                p#result
+                br
+                button#signup_btn(onclick='submit_btn("signup_btn")') Sign Up
