@@ -40,17 +40,25 @@
 
 ### Snapshots
 Home Page! [no sign in]
+<img width="1376" src="https://github.com/user-attachments/assets/d88495fe-12c4-4977-9af4-b6435a1273e0" />
 
 Sign In Page!
-
-Sign Up Page!
+<img width="1376" src="https://github.com/user-attachments/assets/3b97b7ad-2e14-4211-b55e-c0cee7f0cd6c" />
 
 Home Page! [sign in]
+<img width="1376" src="https://github.com/user-attachments/assets/4edf9064-14a6-497e-bf7c-71690698845a" />
 
 Profile Page!
+<img width="1376" src="https://github.com/user-attachments/assets/d12849ed-8818-4adb-a138-6069fe65a26e" />
 
 Chat Page!
+<img width="1376" src="https://github.com/user-attachments/assets/5387fcef-1f47-4937-bf2d-6e79015fa431" />
+
+Message Page!
+<img width="1376" src="https://github.com/user-attachments/assets/b4f76232-2b87-47cf-a46b-e9c824fe6427" />
 
 Search Page!
+<img width="1376" alt="Screenshot 2025-02-02 at 03 03 17" src="https://github.com/user-attachments/assets/b8002b52-f671-4930-909a-563acccd5ecf" />
 
 Sign Out!
+<img width="1363" src="https://github.com/user-attachments/assets/be07d51a-2bc3-454b-8d3e-0b5e1e58c37b" />
